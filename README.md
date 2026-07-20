@@ -57,3 +57,10 @@ Challenge the AI across three difficulty levels or play with a friend.
 ## 🎮 Theme
 
 A modern Tic-Tac-Toe game with multiple AI difficulty levels, smooth animations, and sound effects.
+
+## note
+Sound effects won't play in demo
+
+## demo
+
+https://fady-albert.github.io/TIC-TAC-TOE/
