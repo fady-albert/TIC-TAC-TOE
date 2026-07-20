@@ -1,22 +1,55 @@
-# TIC-TAC-TOE
-play tic tac toe with your friend or with ai, you can play with 3 level ai as you want
+# 🎮 Tic-Tac-Toe
 
-## features
-- two player mode
-- ai opponent
--  |_ easy
--  |_ midium
--  |_ hard
-- win detection
-- draw detection
-- lose detection
-- sound effects
-- dynamic turn message
-- restart game
-- smooth ui
+A modern and interactive Tic-Tac-Toe game built with **HTML**, **CSS**, and **JavaScript**. Play against your friend or challenge the AI with three different difficulty levels.
 
-## technologies
-- html
-- css
-- javascript
+## ✨ Features
 
+- 👥 Two Player Mode
+- 🤖 AI Opponent
+  - 🟢 Easy
+  - 🟡 Medium
+  - 🔴 Hard
+- ✅ Win Detection
+- 🤝 Draw Detection
+- ❌ Lose Detection
+- 🔊 Sound Effects
+- 🔄 Dynamic Turn Messages
+- 🔁 Restart Game
+- 🎨 Smooth & Responsive UI
+
+## 🛠 Technologies
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/tic-tac-toe.git
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd tic-tac-toe
+   ```
+
+3. Open `index.html` in your browser.
+
+## 📂 Project Structure
+
+```
+tic-tac-toe/
+│── index.html
+│── style.css
+│── script.js
+│── assets/
+│   ├── sounds/
+│   └── images/
+└── README.md
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
