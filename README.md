@@ -53,3 +53,7 @@ tic-tac-toe/
 ## 🤖 Tic-Tac-Toe AI
 
 Challenge the AI across three difficulty levels or play with a friend.
+
+## 🎮 Theme
+
+A modern Tic-Tac-Toe game with multiple AI difficulty levels, smooth animations, and sound effects.
