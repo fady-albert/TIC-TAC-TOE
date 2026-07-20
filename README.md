@@ -15,7 +15,7 @@ A modern and interactive Tic-Tac-Toe game built with **HTML**, **CSS**, and **Ja
 - 🔊 Sound Effects
 - 🔄 Dynamic Turn Messages
 - 🔁 Restart Game
-- 🎨 Smooth & Responsive UI
+- 🎨 Smooth UI
 
 ## 🛠 Technologies
 
