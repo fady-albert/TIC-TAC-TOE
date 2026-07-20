@@ -1,0 +1,369 @@
+:root{
+    --white: #EDF2F6;
+    --wGray: #acacac;
+    --black: #494953;
+    --gray: #5e5e5e;
+    --blue: #6A7EFC;
+    --red: #FF5656;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    transition: all 1s ease;
+}
+
+body.dark{
+    background: var(--black);
+}
+ /* mode */
+.mode{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.mode button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: var(--black);
+    color: var(--white);
+    box-shadow: 0px 0px 10px var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+body.dark .mode button{
+    background: var(--white);
+    color: var(--black);
+    box-shadow: 0px 0px 10px var(--black);
+}
+
+.mode button.active{
+    transform: rotate(360deg);
+    border-radius: 50px;
+}
+
+.mode button span{
+    font-size: 30px;
+}
+
+/* choose how to play, again and level */
+.howToPlay, .again, .level{
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--black);
+    z-index: 999;
+    border-radius: 40px;
+    transition: all 1s ease;
+}
+
+body.dark .howToPlay, body.dark .again, body.dark .level{
+    background: var(--white);
+}
+
+.howToPlay.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.again, .level{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.again.show, .level.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.again p{
+    font-size: 50px;
+    font-family: cursive;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: all 1s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+body.dark .again p{
+    color: var(--black);
+}
+
+.again button{
+    font-size: 30px;
+    padding: 10px 30px;
+    font-family: cursive;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+body.dark .again button{
+    background: var(--black);
+    color: var(--white);
+}
+
+.again button:hover{
+    scale: 1.05;
+}
+
+.again button:active{
+    scale: 0.95;
+}
+
+.howToPlay h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+    font-style: oblique;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    transition: all 1s ease;
+}
+
+body.dark .howToPlay h1{
+    color: var(--black);
+}
+
+.howToPlay .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.howToPlay .btn button{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+body.dark .howToPlay .btn button{
+    background: var(--black);
+    color: var(--white);
+}
+
+.howToPlay .btn button span{
+    font-size: 40px;
+}
+
+.howToPlay .btn button:hover{
+    scale: 1.05;
+}
+
+.howToPlay  .btn button:active{
+    scale: 0.95;
+}
+
+.level button{
+    min-width: 200px;
+    font-size: 30px;
+    font-family: cursive;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+body.dark .level button{
+    background: var(--black);
+    color: var(--white);
+}
+
+.level button:hover{
+    scale: 1.05;
+}
+
+.level button:active{
+    scale: 0.95;
+}
+
+.level button#back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    min-width: auto;
+    border-radius: 30px 10px 10px 10px;
+    font-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level button#back span{
+    font-size: 40px;
+}
+
+/* message */
+.msgCon{
+    position: absolute;
+    top: 25px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgCon p{
+    font-size: 40px;
+    font-family: cursive;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: all 1s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+body.dark .msgCon p{
+    color: var(--white);
+}
+
+/* game */
+.main{
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameCon{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+body.dark .square{
+    background: var(--white);
+}
+
+.square:hover{
+    background: var(--gray);
+}
+
+body.dark .square:hover{
+    background: var(--wGray);
+}
+
+.square p{
+    font-size: 100px;
+    font-family: cursive;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    height: 150px;
+    width: 150px;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* pointsCon */
+.pointsCon{
+    min-width: 400px;
+    height: 60px;
+    border-radius: 50px 50px 0 0;
+    background: var(--black);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+    transform: translateY(70px);
+}
+
+.pointsCon.show{
+    transform: translateY(0);
+}
+
+body.dark .pointsCon{
+    background: var(--white);
+}
+
+.pointsCon p{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    pointer-events: none;
+    user-select: none;
+}
+
+.pointsCon p#o{
+    color: var(--red);
+}
+
+.pointsCon p#x{
+    color: #6A7EFC;
+}

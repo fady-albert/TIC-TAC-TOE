@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- google icons logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- mode button -->
+    <div class="mode">
+        <button id="mode">
+            <span class="material-symbols-outlined" id="icon">light_mode</span>
+        </button>
+    </div>
+
+    <!-- how to play -->
+    <div class="howToPlay" id="start">
+        <h1>tic tac toe</h1>
+        <div class="btn">
+            <button id="2p">
+                <span class="material-symbols-outlined">person</span> vs <span class="material-symbols-outlined">person</span>
+            </button>
+
+            <button id="bot">
+                <span class="material-symbols-outlined">person</span> vs <span class="material-symbols-outlined">smart_toy</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- play again -->
+    <div class="again" id="againD">
+       <p id="winner"></p>
+       <button id="again">play again</button>
+    </div>
+
+    <!-- level -->
+    <div class="level" id="level">
+
+        <button id="back">
+            <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+
+        <button id="easy">easy</button>
+        <button id="medium">medium</button>
+        <button id="hard">hard</button>
+    </div>
+
+    <!-- main container -->
+    <div class="main">
+        <div class="gameCon">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="msgCon">
+        <p id="msg"></p>
+    </div>
+
+    <div class="pointsCon" id="points">
+        <p id="o">o</p>
+        <p id="x">x</p>
+    </div>
+
+    <!-- js link -->
+    <script src="./script.js"></script>
+</body>
+</html>
