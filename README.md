@@ -27,15 +27,17 @@ A modern and interactive Tic-Tac-Toe game built with **HTML**, **CSS**, and **Ja
 
 1. Clone the repository:
    ```bash
-   git clone (https://github.com/fady-albert/TIC-TAC-TOE.git)
+   git clone https://github.com/fady-albert/TIC-TAC-TOE.git
    ```
 
 2. Navigate to the project folder:
    ```bash
-   cd tic-tac-toe
+   cd TIC-TAC-TOE
    ```
 
-3. Open `index.html` in your browser.
+3. Extract the `sounds.zip` file into the project directory.
+
+4. Open `index.html` in your preferred web browser.
 
 ## 📂 Project Structure
 
@@ -44,9 +46,7 @@ tic-tac-toe/
 │── index.html
 │── style.css
 │── script.js
-│── assets/
-│   ├── sounds/
-│   └── images/
+│── sounds/
 └── README.md
 ```
 
