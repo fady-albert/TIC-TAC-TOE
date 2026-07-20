@@ -50,4 +50,6 @@ tic-tac-toe/
 └── README.md
 ```
 
-## 
+# 🤖 Tic-Tac-Toe AI
+
+Challenge the AI across three difficulty levels or play with a friend.
