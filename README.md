@@ -19,9 +19,9 @@ A modern and interactive Tic-Tac-Toe game built with **HTML**, **CSS**, and **Ja
 
 ## 🛠 Technologies
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- 🌐 HTML5
+- 🎨 CSS3
+- ⚡ JavaScript (Vanilla)
 
 ## 🚀 Getting Started
 
@@ -50,6 +50,4 @@ tic-tac-toe/
 └── README.md
 ```
 
-## 📄 License
-
-This project is open source and available under the MIT License.
+## 
